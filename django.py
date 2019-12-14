@@ -1,4 +1,4 @@
-dic={}
+'''dic={}
 
 fill='y'
 while fill=='y':
@@ -10,6 +10,24 @@ while fill=='y':
         fill=fill
     else:
         fill='n'
-print(dic)
+print(dic)'''
+
+
+
+
+import re
+email=input("enter the email")
+pattern='^.*@.*$'
+find=re.match(pattern,email)
+while True:
+    if find:
+        print("congratulation")
+        break
+    else:
+        email = input("enter the email")
+        find = re.match(pattern, email)
+
+
+
 
 
